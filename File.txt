@@ -1,0 +1,13 @@
+Решить алгоритмическую задачу (варианты «загуглить» крайне не приветствуются).
+Варианты ниже (вариант необходимо выбрать самостоятельно)
+Change by places first and last letters in each second string of list or array (Поменять местами первую и последнюю буквы в каждой второй строке списка)      
+Transpose a matrix (Транспонировать матрицу)
+Turn a matrix on 90 degrees clockwise (Повернуть матрицу на 90 градусов по часовой стрелке)
+Revert strings of list or array (Ревертировать строки списка)
+Multiply matrixes (Перемножить матрицы)
+Sort list or array by count of consonants in string (Отсортировать список по количеству согласных в строке)
+Find a matrix determinant (Найти определитель матрицы)
+Find the second by length string in a list or array(Найти вторую по длинне строку в списке)
+Sort list or array by count of vowels in string (Отсортировать список по количеству гласных в строке)
+Sort list or array by string length (Отсортировать список по длине строк)
+Find a return matrix (Найти обратную матрицу)

@@ -14,20 +14,25 @@
 
             Title = Text.Title;
 
-            if (Screen.IsExistData(forSorting))
+            Data data = new Data();
+
+            if (data.IsExistData(forSorting))
             {
                 Screen.Show(Text.AboutData, forSorting);
+
+                // Sort list or array by string length (Отсортировать список по длине строк)
                 var afterSorting = forSorting.OrderBy(item => item.Length);
                 Screen.Show(Text.AfterSorting, afterSorting.ToList());
 
+                // Find the second by length string in a list or array(Найти вторую по длинне строку в списке)
                 var secondByLength = afterSorting.ElementAt(afterSorting.Count() - beforLastString);
                 Screen.Show(Text.SecondString, secondByLength);
             }
             else
             {
-                if (!Screen.IsException)
+                if (!data.IsException)
                 {
-                    Screen.Show(string.Format(Text.EmptyFile, Screen.FullPathToFile));
+                    Screen.Show(string.Format(Text.EmptyFile, data.FullPathToFile));
                 }
             }
 

@@ -7,47 +7,6 @@
 
     internal static class Screen
     {
-        internal static string FullPathToFile { get; private set; }
-
-        internal static bool IsException { get; private set; }
-
-        internal static bool IsExistData(List<string> result)
-        {
-            StreamReader reader = null;
-            FullPathToFile = string.Format(Text.FullPathToFile, Environment.CurrentDirectory, Text.FileWithStrings);
-
-            try
-            {
-                reader = new StreamReader(FullPathToFile);
-
-                while (reader.Peek() >= 0)
-                {
-                    var oneString = reader.ReadLine();
-
-                    if (result == null)
-                    {
-                        result = new List<string>();
-                    }
-
-                    result.Add(oneString);
-                }
-
-                if (result.Count == 0)
-                {
-                    return false;
-                }
-
-                return true;
-            }
-            catch (Exception ex)
-            {
-                IsException = true;
-                Screen.Show(ex.Message);
-            }
-
-            return false;
-        }
-
         internal static void Show(string title, List<string> textToShow)
         {
             WriteLine(string.Empty);

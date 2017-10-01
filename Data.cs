@@ -13,6 +13,9 @@
         internal bool IsExistData(List<string> result)
         {
             StreamReader reader = null;
+
+            Environment.CurrentDirectory = @"../../";
+
             this.FullPathToFile = string.Format(Text.FullPathToFile, Environment.CurrentDirectory, Text.FileWithStrings);
 
             try
